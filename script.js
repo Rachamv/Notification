@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const privateContainer = document.getElementById("private");
     const drop = document.getElementById("drop");
 
-    let num = unreadElements.length;
+    let num = Math.floor(Math.random() * 7) + 1; // Generates a random number between 1 and 7
     newNumElement.textContent = num;
 
     containers.forEach((container, index) => {
